@@ -1,0 +1,338 @@
+
+@font-face {
+  font-family: nexalight;
+  src: url("../fonts/nexa/nexalight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: nexabold;
+  src: url("../fonts/nexa/nexabold.otf") format("opentype");
+}
+  body {
+  font-family: "Work Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #828282;
+}
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    color:black;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: black;
+    color: black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #003333;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #265940; 
+    box-shadow: inset 1px white; 
+  }
+.logon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}/*
+.logon.active {
+  opacity: 1;
+  visibility: visible;
+}*/
+
+
+.logon a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+  text-align: center;
+  border-radius: 4px;
+}
+.logon a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.logon a:hover, .logon a:active, .logon a:focus {
+  text-decoration: none;
+  outline: none;
+  background-color: #D3D3D3;
+}
+
+.googin {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}/*
+.googin.active {
+  opacity: 1;
+  visibility: visible;
+}*/
+.googin a {
+
+  font-family: nexalight;
+  width: 50px;
+  padding: 0px 2px;
+  height: 50px;
+  display: table;
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+  text-align: center;
+  border-radius: 4px;
+}
+.googin a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.googin a:hover, .googin a:active, .googin a:focus {
+  text-decoration: none;
+  outline: none;
+  background-color: #D3D3D3;
+}
+
+
+/* Navigation Styling Begins */
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  background-image: linear-gradient(-45deg, rgba(0, 26, 51, 1), rgba(26, 26, 26, 1));
+  font-family: nexalight;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.navLink:hover{
+  margin-left: 13px;
+  font-weight: 1000;
+  font-size: 24px;
+}
+.dropup-content2 a:hover{
+  color: black;
+  font-size: 10px;
+  font-weight: 0px;
+}
+.navSocial{
+  float: left;
+}
+
+.navSocial:hover{
+  margin-bottom: 20px;
+  margin-top: -20px;
+  font-size: 45px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* search box */
+.sidenav .search-container {
+  float: right;
+  /* width: 100%; */
+  padding-right: 0;
+  width: 100%;
+}
+
+.sidenav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  /* width: 100%; */
+}
+.sidenav form{
+  float: right;
+}
+.sidenav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.sidenav .search-container button:hover {
+  background: #ccc;
+}
+
+.navlog {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.navlog.active {
+  opacity: 1;
+  visibility: visible;
+}
+.navlog a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+  text-align: center;
+  border-radius: 4px;
+}
+.navlog a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.navlog a:hover, .navlog a:active, .navlog a:focus {
+  text-decoration: none;
+  outline: none;
+}
+/* Navigation Cross Animation Start*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    text-align: left;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    text-align: left;
+    z-index: 1;
+    margin-left:-130px;
+    margin-top: -4px;
+}
+.techNITi19id,.clientName{
+    color: black;
+    font-size: 15px;
+    font-family: nexalight;
+    text-align: center;
+}
+.nameid{
+  color: aqua;
+}
+.logout{
+  width: 100%;
+  padding: 5px;
+  color: black;
+  font-size: 15px;
+}
+.dropdown-content button:hover {
+  background-color: #D3D3D3;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/*Droup up*/
+
+.dropbtn2 {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content2 a {
+  color: black;
+  padding: 5px 5px;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  width: 230px;
+  text-align: center;
+}
+
+.dropup-content2 a:hover {
+  font-size: 15px;
+  background: lightgray;
+}
+
+.dropup:hover .dropup-content2 {
+  display: block;
+  margin-left: 50px;
+}
+
+.dropup:hover .dropbtn2 {
+  background-color: #2980B9;
+}
+/*Droup up end*/
